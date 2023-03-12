@@ -367,11 +367,12 @@ body {
   width: calc(100% - 40px);
   margin: 0 auto;
   color: rgba(0, 0, 0, 0);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
+/*   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2); */
   transition: all .3s ease;
   font-size: 0;
   opacity: 0;
   height: 0;
+  transform: scale(0);
 }
 .acor-container .acor-body p {
   margin: 0;
@@ -388,11 +389,12 @@ body {
   font-family: Verdana, sans-serif;
   font-size: 18px;
   margin: 0 0 5px;
-  transition: color 0.35s;
+  transition: all 0.35s ease;
   background: white;
   position: relative;
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
+
 }
 
 
@@ -420,6 +422,7 @@ body {
   opacity: 1;
   height: unset;
   margin-top: 10px;
+  transform: scale(1);
 }
 
 .acor-container {
@@ -438,6 +441,11 @@ body {
 .acor-container label:hover {
   color: black;
   background-color: white;
+}
+
+.acor-container label:active {
+  color: #fff;
+  background-color: #337ab7;
 }
 
 @media (min-width: 480px) {
@@ -464,8 +472,7 @@ body {
   }
 
   .acor-container label:hover {
-    color: #fff;
-    background-color: #337ab7;
+    box-shadow: 2px 0px 15px 5px #337ab7;
   }
 
   label:hover .arrow {
@@ -478,11 +485,20 @@ body {
     opacity: 1;
     height: unset;
     margin-top: 10px;
+    transform: scale(1);
   }
 
   .acor-container label {
     cursor: pointer;
   }
+}
+
+@media (min-width: 980px) {
+  .acor-body img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
 }
 
 @media (min-width: 1440px) {
@@ -497,4 +513,6 @@ body {
   .meme-heading {
     font-size: 26px;
   }
+
+
 }
