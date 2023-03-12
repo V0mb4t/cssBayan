@@ -372,6 +372,7 @@ body {
   font-size: 0;
   opacity: 0;
   height: 0;
+  transform: scale(0);
 }
 .acor-container .acor-body p {
   margin: 0;
@@ -392,7 +393,8 @@ body {
   background: white;
   position: relative;
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
+
 }
 
 
@@ -420,6 +422,7 @@ body {
   opacity: 1;
   height: unset;
   margin-top: 10px;
+  transform: scale(1);
 }
 
 .acor-container {
@@ -482,11 +485,20 @@ body {
     opacity: 1;
     height: unset;
     margin-top: 10px;
+    transform: scale(1);
   }
 
   .acor-container label {
     cursor: pointer;
   }
+}
+
+@media (min-width: 980px) {
+  .acor-body img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
 }
 
 @media (min-width: 1440px) {
@@ -502,9 +514,5 @@ body {
     font-size: 26px;
   }
 
-  .acor-body img {
-    width: 50%;
-    display: block;
-    margin: 0 auto;
-}
+
 }
