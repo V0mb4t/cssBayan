@@ -367,7 +367,7 @@ body {
   width: calc(100% - 40px);
   margin: 0 auto;
   color: rgba(0, 0, 0, 0);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
+/*   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2); */
   transition: all .3s ease;
   font-size: 0;
   opacity: 0;
@@ -501,4 +501,10 @@ body {
   .meme-heading {
     font-size: 26px;
   }
+
+  .acor-body img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
 }
